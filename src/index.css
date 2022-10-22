@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 15px;
+  }
+
+  :root {
+    --max-width: 920px;
+    --height: 500px;
+  }
+
+  .animation {
+    animation: move-in 0.6s ease-in-out;
+  }
+
+  @keyframes move-in {
+    from {
+      opacity: 0;
+      translate: -40px;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
